@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 # Create x values from 0 to 4π (about 12.56)
 x = np.linspace(0, 4 * np.pi, 500)
 y = np.sin(x)
+plt.style.use('dark_background')
 
 # Create the plot
 fig, ax = plt.subplots(figsize=(10, 6))
