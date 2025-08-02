@@ -32,7 +32,7 @@ segments = np.concatenate([points[:-1], points[1:]], axis=1)
 cmap = plt.get_cmap('spring') 
 
 """Line collection is created using the segments and colormap."""
-lc = LineCollection(segments, cmap=cmap, linewidth=2)
+lc = LineCollection(list(segments), cmap=cmap, linewidth=2)
 lc.set_array(y)  # Color by y-values
 ax.add_collection(lc)
 
